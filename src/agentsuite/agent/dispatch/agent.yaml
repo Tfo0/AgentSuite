@@ -1,0 +1,7 @@
+mcp: traffic
+allowed_tools:
+  - mcp__traffic__traffic_get
+  - mcp__traffic__dispatch_send
+sdk_tools: []
+max_turns: 60
+session_timeout_s: 3600

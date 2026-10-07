@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# venv
+.venv/
+venv/
+
+# secrets / runtime
+.env
+.env.*
+!/.env.example
+project/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.log
+
+# caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# local Claude Code tooling
+.claude/
+.playwright-mcp
+
+# excluded from public release
+tests/
+docs/
+scripts/
+CLAUDE.md
+/pyproject.toml
+**/README.md
+!/README.md

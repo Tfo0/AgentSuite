@@ -1,0 +1,108 @@
+drop:
+
+- name: analytics-sdk-hosts
+  host:
+    - google-analytics.com
+    - googletagmanager.com
+    - segment.io
+    - mixpanel.com
+    - amplitude.com
+    - hotjar.com
+    - fullstory.com
+    - logrocket.com
+    - sentry.io
+    - sentry-next
+    - bugsnag.com
+    - datadoghq.com
+    - newrelic.com
+    - rudderstack.com
+    - posthog.com
+    - braze.com
+    - appsflyer.com
+    - adjust.com
+    - smartlook.com
+    - clarity.ms
+    - msecnd.net
+
+- name: cn-tracking-hosts
+  host:
+    - sensorsdata.cn
+    - sensorsdata.com
+    - sensors.com.cn
+    - umeng.com
+    - ulink.umeng.com
+    - talkingdata.com
+    - growingio.com
+    - tcss.qq.com
+    - beacon.qq.com
+    - pingfore.qq.com
+    - report.qq.com
+    - gstui.qq.com
+    - arms.aliyun.com
+    - arms-retcode
+    - ali-dot.com
+    - cnzz.com
+    - tongji.baidu.com
+    - e.baidu.com
+    - datastory.com
+    - pstatp.com
+    - snssdk.com
+    - zijieapi.com
+    - zijieapi.net
+    - slardar
+    - sgali-mcs.byteoversea.com
+    - api16-normal-useast1a.tiktokshopglobalselling.com
+    - seller.tiktokshopglobalselling.com
+    - api-verification-alisg.tiktokshop.com
+    - edge.microsoft.com
+
+- name: tracking-path-keywords
+  path:
+    - /beacon
+    - /rum
+    - /apm
+    - /heartbeat
+    - /pulse
+    - /__perf
+    - /__metrics
+    - /perf-report
+    - /g/collect
+    - /adview
+    - /adservice
+
+- name: head-health-check
+  method: [HEAD]
+
+- name: options-cors-preflight
+  method: [OPTIONS]
+
+- name: static-asset-suffix
+  path_endswith:
+    - .js
+    - .mjs
+    - .css
+    - .png
+    - .jpg
+    - .jpeg
+    - .gif
+    - .webp
+    - .avif
+    - .svg
+    - .ico
+    - .woff
+    - .woff2
+    - .ttf
+    - .eot
+    - .otf
+    - .map
+    - .mp4
+    - .webm
+    - .mp3
+    - .wav
+    - .pdf
+    - .image
+    - .avis
+
+- name: javascript-response
+  response_ct:
+    - javascript

@@ -1,0 +1,13 @@
+mcp: traffic
+allowed_tools:
+  - mcp__traffic__traffic_get
+  - mcp__traffic__traffic_diff
+  - mcp__traffic__traffic_search
+sdk_tools:
+  - Read
+  - Write
+  - Edit
+  - Glob
+  - Grep
+max_turns: 80
+session_timeout_s: 3600

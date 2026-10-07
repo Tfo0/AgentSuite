@@ -1,0 +1,12 @@
+mcp: traffic
+allowed_tools:
+  - mcp__traffic__traffic_get
+  - mcp__traffic__traffic_search
+  - mcp__traffic__traffic_repeater
+  - mcp__traffic__traffic_send
+  - mcp__traffic__traffic_brute
+  - mcp__traffic__traffic_diff
+  - mcp__traffic__verify_report
+sdk_tools: null
+max_turns: 80
+session_timeout_s: 3600
